@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  /* ALGORITHME: maximum entre 3 nombres 
+    VARIABLES:
+      a: réel
+      b: réel
+      c: réel
+      max: réel
+    DEBUT
+      AFFICHER "Entrer les 3 valeurs"
+      AFFICHER "a= "
+      LIRE (a)
+      AFFICHER "b= "
+      LIRE (b)
+      AFFICHER "c= "
+      LIRE (c)
+      max=a
+      SI (max<b) ALORS
+        max=b
+      FINSI
+      SI (max<c) ALORS
+        max=c
+      FINSI
+      AFFICHER "Le maximum des trois est"
+      AFFICHER (max)
+    FIN */
+  float a,b,c,max;
+  printf ("Entrer les 3 valeurs\n");
+  printf ("a= ");
+  scanf ("%f", &a);
+  printf ("b= ");
+  scanf ("%f" , &b);
+    printf ("c= ");
+  scanf ("%f" , &c);
+  max=a;
+  if (max<b)
+    {
+      max=b;
+    }
+  if (max<c)
+    {
+      max=c;
+    }
+  printf ("Le maximum des trois est ");
+  printf ("%f", max);
+  return (0);
+}
