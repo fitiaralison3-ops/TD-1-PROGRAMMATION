@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  /* ALGORITHME: Calcul de factorielle de N
+    VARIABLES
+      N: entier
+      i: entier
+      f: entier
+    DEBUT
+      AFFICHER "Entrer un entier positif"
+      AFFICHER (N= )
+      LIRE (N)
+      f=1
+      POUR (i=1, i<=N)
+        f=f*i
+      FINPOUR
+      AFFICHER  (N)
+      AFFICHER "! = "
+      AFFICHER (f)
+  FIN*/
+  int N,i,f;
+  printf ("Entrer un entier positif\n");
+  printf ("N= ");
+  scanf ("%d",&N);
+  f=1;
+  for (i=1; i<=N;i++)
+    {
+      f=f*i;
+    }
+  printf ("%d", N);
+  printf ("! =" );
+  printf ("%d", f);
+  return (0);
+}
