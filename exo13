@@ -11,7 +11,7 @@ int main()
     AFFICHER "Entrer un nombre entier positif"
     AFFICHER "N= "
     LIRE (N)
-    S=0
+    S=1
     POUR (i=1,i<=N)
       S=S*i
     FINPOUR
@@ -22,7 +22,7 @@ int main()
   int N,i,S;
   printf ("Entrer un nombre entier positif\n N= ");
   scanf ("%d", &N);
-  S=0;
+  S=1;
   for (i=1; i<=N;i++)
     {
       S=S*i;
