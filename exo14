@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+  /* ALGORITHME: Somme de 1/1+1/2+1/3+...+1/N
+    VARIABLES
+      N: entier 
+      i: entier
+      S: réel
+    DEBUT
+      AFFICHER "Entrer le nombre où arreter le calcul"
+      AFFICHER "N= "
+      LIRE (N)
+      S=0
+      POUR (i=1,i<=N)
+        S=S+(1/i)
+      FINPOUR
+      AFFICHER "La somme est "
+      AFFICHER "S= "
+      AFFICHER (S)
+    FIN */
+  int N,i;
+  float S;
+  printf ("Entrer le nombre où arreter le calcul\n N= ");
+  scanf ("%d", &N);
+  S=0;
+  for (i=1;i<=N;i++)
+    {
+      S=S+(1/(float)i);
+    }
+  printf ("La somme est \n S= %f", S);
+  return (0);
+} 
