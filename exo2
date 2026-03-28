@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+  /* ALGORITHME: produit de 2 nombres
+  VARIABLES:
+    a: réel
+    b: réel
+  DEBUT
+    AFFICHER "Entrer les 2 réels à multiplier"
+    AFFICHER "a = "
+    LIRE (a)
+    AFFICHER "b = "
+    LIRE (b)
+    SI (a==0) ou (b==0) ALORS
+      AFFICHER "Le produit est nul"
+    SINON
+      SI ((a<0) et (b<0)) ou ((a>0) et (b>0)) ALORS
+        AFFICHER "Le produit est positif"
+      SINON
+        SI((a<0) et (b>0)) ou ((a>0) et (b<0)) ALORS
+         AFFICHER "Le produit est négatif"
+        FINSI
+      FINSI
+    FINSI
+  FIN  */   
+  float a,b;
+  printf ("Entrer les 2 réels à multiplier\n");
+  printf ("a = ");
+  scanf ("%f",&a);
+  printf ("b = ");
+  scanf ("%f",&b);
+  if ((a==0 || b==0))
+    {
+      printf ("Le produit est nul");
+    }
+  else
+    {
+      if ((a<0 && b<0) || (a>0 && b>0))
+        {
+          printf ("Le produit est positif");
+        }
+      else if ((a<0 && b>0) || (a>0 && b<0)) 
+        {
+          printf ("Le produit est négatif");
+        }
+    }
+  return (0);
+}
