@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  /* ALGORITHME: lire deux notes de type réel et afficher leur somme et leur moyenne
+    VARIABLES:
+      a: réel
+      b: réel
+      S: réel
+      M: réel
+    DEBUT
+      AFFICHER "Entrer les 2 notes"
+      AFFICHER "a = "
+      LIRE (a)
+      AFFICHER "b = "
+      LIRE (b)
+      S=a+b
+      M=S/2
+      AFFICHER "La somme S est "
+      AFFICHER "S = "
+      AFFICHER (S)
+      AFFICHER "La moyenne M est "
+      AFFICHER "M = "
+      AFFICHER (M)
+    FIN */
+  float a,b,S,M;
+  printf ("Entrer les 2 notes\n");
+  printf ("a = ");
+  scanf ("%f", &a);
+  printf ("b = ");
+  scanf ("%f", &b);
+   S=a+b;
+   M=S/2;
+    printf ("La somme S est \n");
+   printf ("S= ");
+   printf ("%f\n",S);
+   printf ("La moyenne M est \n");
+   printf ("M= ");
+   printf ("%f\n",M);
+   return (0);
+}
