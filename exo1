@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+  /* ALGORITHME: nombre positif ou négatif
+    VARIABLES:
+      x:réel
+    DEBUT
+      AFFCHER "Entrer le réel à tester"
+      AFFICHER "x="
+      LIRE (x)
+      SI (x<0) ALORS
+        AFFICHER "C'est un nombre négatif"
+      SINON
+        AFFICHER "C'est un nombre positif"
+      FINSI
+    FIN
+    */
+    float x;
+    printf ("Entrer le réel à tester\n");
+    printf ("x= ");
+    scanf ("%f",&x);
+    if (x<0)
+      {
+        printf ("C'est un nombre négatif");
+      }
+    else
+      {
+        printf ("C'est un nombre positif");
+      }  
+  return (0);
+}
