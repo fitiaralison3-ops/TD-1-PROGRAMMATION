@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+  /* ALGORITHME: Afficher des nombres de 1 à N
+    VARIABLES
+      N: entier
+      i: entier
+    DEBUT
+      AFFICHER " Entrer le nombre où vous voulez vous arreter"
+      LIRE (N)
+      POUR (i=1, i<=N)
+        i=i+1
+        AFFICHER (i)
+      FINPOUR
+    FIN */
+  int N,i;
+  printf ("Entrer le nombre où vous voulez vous arreter\n");
+  printf ("N= ");
+  scanf ("%d", &N);
+  for (i=1;i<=N;i++)
+    {
+      printf ("%d\n", i);
+    }
+  return (0);
+}
