@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  /* ALGORITHME: somme de 1+2+3+…+N
+  VARIABLES: 
+    N: entier
+    i: entier
+    S: entier
+  DEBUT
+    AFFICHER "Entrer un nombre entier positif"
+    AFFICHER "N= "
+    LIRE (N)
+    S=0
+    POUR (i=1,i<=N)
+      S=S+i
+    FINPOUR
+    AFFICHER "La somme est"
+    AFFICHER "S= "
+    AFFICHER (S)
+  FIN */
+  int N,i,S;
+  printf ("Entrer un nombre entier positif\n N= ");
+  scanf ("%d", &N);
+  S=0;
+  for (i=1; i<=N;i++)
+    {
+      S=S+i;
+    }
+  printf ("La somme est \n S= %d", S);
+  return (0);
+}
