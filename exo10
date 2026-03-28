@@ -2,25 +2,32 @@
 #include <math.h>
 int main ()
 {
-  /* ALGORITHME: Afficher des nombres de 1 à N
-    VARIABLES
+  /* ALGORITHME: Diviseur d'un entier N
+    VARIABLES 
       N: entier
-      i: entier
+      d: entier
     DEBUT
-      AFFICHER " Entrer le nombre où vous voulez vous arreter"
+      AFFICHER"Entrer un entier positif"
+      AFFICHER "N= "
       LIRE (N)
-      POUR (i=1, i<=N)
-        i=i+1
-        AFFICHER (i)
+      POUR (d=1, d<=N)
+        SI (N%d==0) ALORS
+          AFFICHER (N)
+          AFFICHER "  est un diviseur de N "
+        FINSI
       FINPOUR
-    FIN */
-  int N,i;
-  printf ("Entrer le nombre où vous voulez vous arreter\n");
+    FIN*/
+  int N,d;
+  printf ("Entrer un entier positif\n");
   printf ("N= ");
   scanf ("%d", &N);
-  for (i=1;i<=N;i++)
-    {
-      printf ("%d\n", i);
+  for (d=1;d<=N;d++)
+  {
+    if (N%d==0)
+      {
+        printf ("%d", d);
+        printf ("  est un diviseur de N \n");
+      }
     }
   return (0);
 }
