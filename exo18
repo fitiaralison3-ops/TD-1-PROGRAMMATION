@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+  /* ALGORITHME: calcul du pgcd
+    VARIABLES
+      a: entier
+      b: entier
+      c: entier
+      pgcd: entier
+    DEBUT
+      AFFICHER " Entrer les 2 nombres"
+      AFFICHER "a= "
+      LIRE (a)
+      AFFICHER "b= "
+      LIRE (b)
+      SI (a>b) ALORS
+        TANT QUE (b!=0)
+          pgcd=a%b
+          a=b
+          b=pgcd
+        FINTANTQUE
+      SINON
+        c=a
+        a=b
+        b=c
+        TANT QUE (b!=0)
+          pgcd=a%b
+          a=b
+          b=pgcd
+        FINTANTQUE
+      FINSI
+    AFFICHER "Le pgcd est " 
+    AFFICHER (a)
+  FIN*/
+  int a,b,c,pgcd;
+  printf (" Entrer les 2 nombres\n a=");
+  scanf ("%d", &a);
+  printf ("b= ");
+  scanf ("%d", &b);
+  if (a>b)
+    {
+      while (b!=0)
+        {
+          pgcd=a%b;
+          a=b;
+          b=pgcd;
+        }
+    }
+  else
+    {
+      c=a;
+      a=b;
+      b=c;
+      while (b!=0)
+        {
+          pgcd=a%b;
+          a=b;
+          b=pgcd;
+        }
+    }
+  printf ("Le pgcd est\n pgcd = %d" , a);
+  return (0);
+}
