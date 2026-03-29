@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+  /*ALGORITHME:S=1! + 2! + 3! +…. +N!
+    VARIABLES
+      N: entier
+      i: entier
+      F: entier
+      S: entier
+    DEBUT:
+      AFFICHER: "Entrer le nombre où s'arreter"
+      AFFICHER:"N= "
+      LIRE(N)
+      S=0
+      F=1
+      POUR(i=1,i<=N)
+        F=F*i
+        S=S+F
+      FINPOUR
+      AFFICHER "La somme est "
+      AFFICHER "S= "
+      AFFICHER (S)
+    FIN*/
+  int N,i,S,F;
+  printf ("Entrer le nombre où s'arreter\n N= ");
+  scanf ("%d", &N);
+  S=0;
+  F=1;
+  for (i=1;i<=N;i++)
+    {
+      F=F*i;
+      S=S+F;
+    }
+  printf ("La somme est \n S= %d", S);
+  return (0);
+}
