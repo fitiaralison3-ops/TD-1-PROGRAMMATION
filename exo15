@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  /* ALGORITHME: somme s=1 + 10 + 10^2+ ….+ 10^N
+    VARIABLES
+      N: entier
+      i: entier
+      s: entier
+    DEBUT
+      AFFICHER " Entrer le nombre où le calcul doit s'arreter"
+      AFFICHER "N= "
+      LIRE (N)
+      s=0
+      POUR (i=0, i<=N)
+        s=s+pow (10,i)
+      FINPOUR
+      AFFICHER "La somme est "
+      AFFICHER "s= "
+    FIN*/
+  int N,i,s;
+  printf ("Entrer le nombre où le calcul doit s'arreter\n N= ");
+  scanf ("%d", &N);
+   s=0;
+  for (i=0; i<=N;i++)
+    {
+      s=s+pow(10,i);
+    }
+  printf ("La somme est \n s= %d",s);
+  return (0);
+}
