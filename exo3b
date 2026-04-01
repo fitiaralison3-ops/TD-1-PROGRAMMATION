@@ -2,7 +2,7 @@
 #include <math.h>
 int main()
 {
-  /* ALGORITHME: Echange de 2 variables
+  /* ALGORITHME: Echange de 3 variables
     VARIABLES
       A:réel
       B: réel
