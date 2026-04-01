@@ -1,0 +1,84 @@
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+  /* ALGORITHME: nombre premier ou non
+    VARIABLES
+      n :entier 
+      m :entier 
+      i :entier 
+      j :entier 
+     d :entier 
+     b:entier 
+    DEBUT_ALGORITHME
+      d = 0
+      b = 0
+      AFFICHER "Entrez les 2 entiers"
+      LIRE (n)
+      LIRE (m)
+      POUR (i=2,i<= sqrt(n))
+        SI (n%i==0) ALORS
+          d=d+1
+        FINSI
+      FINPOUR
+    SI (d==0) ALORS
+      AFFICHER (n)
+      AFFICHER "  est un nombre premier"
+    FINSI
+     SINON
+      AFFICHER n
+     AFFICHER "  n'est pas un nombre premier"
+    FINSINON
+    POUR( j=2,j<= sqrt(m))
+      SI (m%j==0) ALORS
+        b = b+1
+      FINSI
+    FINPOUR
+      SI (b==0) ALORS
+        AFFICHER m
+        AFFICHER "  est un nombre premier"
+      FIN_SI
+      SINON
+        AFFICHER m
+        AFFICHER "  n'est pas un nombre premier"
+      FIN_SINON
+  FIN*/
+  int n,m,i,j,d,b;
+  d=0;
+  b=0;
+  printf ("Entrer les 2 entiers\n n= ");
+  scanf ("%d", &n);
+  printf (" m= ");
+  scanf ("%d", &m);
+  for (i=2; i<= sqrt(n);i++)
+    {
+      if (n%i==0)
+        {
+          d=d+1;
+        }
+    }
+  if (d==0)
+   {
+      printf ("%d est un nombre premier\n ", n);
+    }
+  else
+    {
+      printf ("%d n'est pas un nombre premier\n", n);
+    }
+    for (j=2;j<= sqrt(m);j++)
+    {
+      if (n%j==0)
+        {
+          b=b+1;
+        }
+    }
+  if (b==0)
+   {
+      printf ("%d est un nombre premier ", m);
+    }
+  else
+    {
+      printf ("%d n'est pas un nombre premier", m);
+    }
+  return (0);
+}
