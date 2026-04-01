@@ -12,7 +12,7 @@ int main()
       AFFICHER "A= "
       LIRE (A)
       AFFICHER "Entrer le deuxième nombre"
-      AFFICHER B= "
+      AFFICHER "B= "
       LIRE (B)
       T=A
       A=B
