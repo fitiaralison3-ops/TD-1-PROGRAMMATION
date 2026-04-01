@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+  /* ALGORITHME: Calcul de moyenne
+    VARIABLES
+      A: réel
+      B: réel
+      C1: entier
+      C2: entier
+      M: réel
+    DEBUT
+      AFFICHER " Entrer la première note et son coefficient"
+      AFFICHER "A= "
+      LIRE (A)
+      AFFICHER "C1= "
+      AFFICHER (C1)
+       AFFICHER " Entrer la deuxième note et son coefficient"
+      AFFICHER "B= "
+      LIRE (B)
+      AFFICHER "C2= "
+      AFFICHER (C2)
+      M=((A*C1)+(B*C2))/(C1*C2)
+      AFFICHER "La moyenne est "
+      AFFICHER "M= "
+      AFFICHER (M)
+    FIN */
+    float A,B,M;
+    int C1,C2;
+    printf (" Entrer la première note et son coefficient\nA=");
+    scanf ("%f\n",&A);
+    printf("C1=");
+    scanf("%d\n",&C1);
+        printf (" Entrer la première note et son coefficient\nA=");
+    scanf ("%f\n",&B);
+    printf("C2=");
+    scanf("%d\n",&C2);
+    M=((A*C1)+(B*C2))/(C1+C2);
+    printf ("La moyenne est \nM=%f",M);
+    return (0);
+  }
