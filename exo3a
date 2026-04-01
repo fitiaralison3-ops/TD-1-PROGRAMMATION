@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  /* ALGORITHME: Echange de 2 variables
+    VARIABLES
+      A:réel
+      B: réel
+      T: réel
+    DEBUT
+      AFFICHER "Entrer le premier nombre"
+      AFFICHER "A= "
+      LIRE (A)
+      AFFICHER "Entrer le deuxième nombre"
+      AFFICHER B= "
+      LIRE (B)
+      T=A
+      A=B
+      B=T
+      AFFICHER "Après échange, on a: "
+      AFFICHER "A= "
+      AFFICHER (A)
+      AFFICHER "B= "
+      AFFICHER (B)
+    FIN */
+  float A,B,T;
+  printf("Entrer le premier nombre\nA= ");
+  scanf("%f\n",&A);
+  printf("Entrer le deuxième nombre\nB= ");
+  scanf("%f\n",&B);
+  T=A;
+  A=B;
+  B=T;
+  printf("Après échange, on a: A=%f et B=%f ", A,B);
+  return(0);
+}
