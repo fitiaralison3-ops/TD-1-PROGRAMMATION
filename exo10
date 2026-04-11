@@ -4,26 +4,26 @@ int main ()
 {
   /* ALGORITHME: Diviseur d'un entier N
     VARIABLES 
-      N: entier
+      n: entier
       d: entier
     DEBUT
       AFFICHER"Entrer un entier positif"
-      AFFICHER "N= "
-      LIRE (N)
-      POUR (d=1, d<=N)
-        SI (N%d==0) ALORS
-          AFFICHER (N)
-          AFFICHER "  est un diviseur de N "
+      AFFICHER "n= "
+      LIRE (n)
+      POUR (d=1, d<=n)
+        SI (n%d==0) ALORS
+          AFFICHER (n)
+          AFFICHER "  est un diviseur de n "
         FINSI
       FINPOUR
     FIN*/
-  int N,d;
+  int n,d;
   printf ("Entrer un entier positif\n");
-  printf ("N= ");
-  scanf ("%d", &N);
-  for (d=1;d<=N;d++)
+  printf ("n= ");
+  scanf ("%d", &n);
+  for (d=1;d<=n;d++)
   {
-    if (N%d==0)
+    if (n%d==0)
       {
         printf ("%d", d);
         printf ("  est un diviseur de N \n");
